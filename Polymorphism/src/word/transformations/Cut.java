@@ -15,6 +15,7 @@ public class Cut implements TextTransform {
             text.setCut("");
             return;
         }
+        this.lastRemoved = "";
         for (int i = startIndex; i < endIndex; i++) {
             this.lastRemoved += text.getText().charAt(i);
         }
